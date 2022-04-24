@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+    
+
+    <h1>Password Generator</h1>
+
+    <div class="overlay">
+
+        <div class="inline">
+            <p>Password Length</p>
+            <select class="length"></select>
+        </div>
+
+        <div class="inline">
+            <p>Include Uppercase Characters</p>
+            <input class="cb-uppercase" type="checkbox">
+        </div>
+
+        <div class="inline">
+            <p>Include Lowercase Characters</p>
+            <input class="cb-lowercase" type="checkbox">
+        </div>
+
+        <div class="inline">
+            <p>Include Numbers</p>
+            <input class="cb-numbers" type="checkbox">
+        </div>
+
+        <div class="inline">
+            <p>Include Symbols</p>
+            <input class="cb-symbols" type="checkbox">
+        </div>
+
+    </div>
+
+    <div class="overlay-two">
+
+        <div class="inline">
+            <p class="ynp">Your New Password</p>
+            <input class="display-password" type="text">
+        </div>
+        
+        <br>
+        
+        <button class="button-password">New Password</button>
+        
+    </div>
+
+</body>
+</html>
