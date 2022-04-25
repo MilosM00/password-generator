@@ -21,6 +21,10 @@ h1{
     display: inline-flex;
 }
 
+.inline-password{
+    display: inline-flex;
+}
+
 p{
     font-family: sans-serif;
     padding-bottom: 20px;
@@ -78,4 +82,31 @@ select{
 
 .ynp{
     padding-top: 10px;
+}
+
+span{
+    padding: 10px;
+}
+
+.button-copy{
+    height: 40px;
+    border: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@media (max-width: 780px) {
+    .inline-password{
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 499px) {
+    .display-password{
+        width: 300px;
+    }
 }
