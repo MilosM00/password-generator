@@ -8,6 +8,7 @@ const numbers = document.querySelector(`.cb-numbers`);
 const symbols = document.querySelector(`.cb-symbols`);
 const displayPassword = document.querySelector(`.display-password`);
 const buttonPassowrd = document.querySelector(`.button-password`);
+const buttonCopy = document.querySelector(`.button-copy`);
 
 
 buttonPassowrd.addEventListener(`click`, () =>{
@@ -235,6 +236,11 @@ buttonPassowrd.addEventListener(`click`, () =>{
             case `50`: displayPassword.value = `${includeULNS(50)}`; break;
         }
     }
+});
+
+buttonCopy.addEventListener(`click`, () =>{
+    displayPassword.select();
+    document.execCommand(`copy`);
 });
 
 
